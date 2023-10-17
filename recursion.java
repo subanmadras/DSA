@@ -1,15 +1,15 @@
 package DSA;
 import java.util.*;
 public class recursion {
-    static void fact(int n, int sum){
-        if(n==0){
-            System.out.println(sum);
-        return;
+    static void revArr(int n, int arr[]){
+        int narr[] = new int[n];
+        for(int i=n-1; i>=0; i--){
+          narr[n-i-1] = arr[i];  
         }
-       sum=sum*n;
-        fact(n-1,sum);
+        System.out.println(Arrays.toString(narr));
     }
     public static void main(String args[]){
-        fact(5,1);
+        int arr[] = {1,2,3,4,5};
+       revArr(5,arr);
     }
 }
