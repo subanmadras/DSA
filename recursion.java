@@ -1,13 +1,15 @@
 package DSA;
 import java.util.*;
 public class recursion {
-    static void func(int n){
-        if(n==0)
+    static void fact(int n, int sum){
+        if(n==0){
+            System.out.println(sum);
         return;
-        System.out.println(n);
-        func(n-1);
+        }
+       sum=sum*n;
+        fact(n-1,sum);
     }
     public static void main(String args[]){
-        func(5);
+        fact(5,1);
     }
 }
