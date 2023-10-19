@@ -1,4 +1,5 @@
 package DSA;
+import java.util.*;
 import java.util.HashMap;
 import java.util.Map;
 public class hashmap {
@@ -29,6 +30,11 @@ public class hashmap {
             for(Map.Entry<String,Integer> e : map.entrySet()){
                System.out.println(e.getKey());
                 System.out.println(e.getValue());
+            }
+            //iterating using set 
+            Set<String> keys = map.keySet();
+            for(String key : keys){
+                System.out.println(key+" "+map.get(key));
             }
         }
     }
