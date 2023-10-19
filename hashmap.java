@@ -1,5 +1,6 @@
 package DSA;
 import java.util.HashMap;
+import java.util.Map;
 public class hashmap {
     public static void main(String args[]){
         //hasmap creation
@@ -17,14 +18,18 @@ public class hashmap {
         System.out.println(map);
 
         //search ooperations in map
-        if(map.containsKey
-        ("indonesia"))
+        if(map.containsKey("indonesia"))
         {
             System.out.println("indonesia exist");
         }else
         {
                 System.out.println("indonesia doesn't exist");
             }
+            //iterating method on a hashmap through for each loop
+            for(Map.Entry<String,Integer> e : map.entrySet()){
+               System.out.println(e.getKey());
+                System.out.println(e.getValue());
+            }
         }
     }
-}
+
