@@ -36,6 +36,9 @@ public class hashmap {
             for(String key : keys){
                 System.out.println(key+" "+map.get(key));
             }
+            //to remove any key value pair in hashmap
+            map.remove("china");
+            System.out.println(map);
         }
     }
 
