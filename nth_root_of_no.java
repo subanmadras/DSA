@@ -49,7 +49,7 @@ public class nth_root_of_no {
             if(val == m){
                 return i;
             }else if(val > m){
-                break; 
+                break;  
             }
         }
         return -1;
