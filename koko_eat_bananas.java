@@ -36,11 +36,12 @@ public class koko_eat_bananas{
         return low;
     }
     /*BRUTE FORCE SOLUTION*/ 
-    
+
     /*static int findMaxi(int v[]){
         int maxi = Integer.MIN_VALUE;
         int n = v.length;
         for(int i=0; i<n; i++){
+            
             maxi =Math.max(maxi,v[i]);
         }
         return maxi;
@@ -67,7 +68,7 @@ public class koko_eat_bananas{
         int v[] = {7, 15, 6, 3};
         int h = 8;
         int ans = min_rate_to_eat_bananas(v,h);
-        System.out.println(ans+"/ hr");
+        System.out.println(ans+" Bananas / hr");
     }
 }
 
