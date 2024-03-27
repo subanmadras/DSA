@@ -24,6 +24,21 @@ class DoubliLL{
         current.next = newNode;
         newNode.prev = current; 
     }
+
+    //finding middle Node  of the LL
+    public Node middleNode(){
+        if(head == null){
+            return null;
+        }
+        Node slow = head;
+        Node fast = head;
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+    // method to display a LL
     public void display(){
         Node current = head;
         while(current != null){
@@ -32,6 +47,8 @@ class DoubliLL{
         }
         System.out.println("null");
     }
+
+    //method to delete a node
     public void delete(Node del){
         if(head == null || del == null){
             return;
@@ -48,6 +65,7 @@ class DoubliLL{
 
     }
 
+    // method to reverse a LL
     public void reverse() {
         Node current = head;
         Node temp = null;
@@ -70,10 +88,15 @@ class DoubliLL{
         list.insert(1);
         list.insert(2);
         list.insert(3);
+        list.insert(4);
+        list.insert(5);
+        list.insert(6);
         //  Node delNode = list.head.next;
         //  list.delete(delNode);
          list.reverse();
         list.display();
+        Node midNode = list.middleNode();
+        System.out.println("middle node is: "+midNode.data);
     }
     
 }
