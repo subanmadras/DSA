@@ -31,7 +31,7 @@ public class search_an_ele_in_LL {
         head.next = new Node(arr[1]);
         head.next.next = new Node(arr[2]);
 
-        int val = 4;
+        int val = 1;
 
         System.out.println(checkIfPresent(head, val));
     }

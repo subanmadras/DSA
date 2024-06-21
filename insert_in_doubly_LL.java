@@ -1,5 +1,5 @@
 package DSA;
-import java.util.*;
+//import java.util.*;
 class Node{
     int data;
     Node next, prev;
@@ -47,6 +47,17 @@ class DoubliLL{
         }
         System.out.println("null");
     }
+    //method to delete a last node
+    public void deleteLast(){
+        Node secLast = head;
+        Node last = head.next;
+        while(last.next != null){
+            last = last.next;
+            secLast = secLast.next;
+        }
+        last.next = null;
+        secLast.prev = null;
+    }
 
     //method to delete a node
     public void delete(Node del){
@@ -81,8 +92,7 @@ class DoubliLL{
             head = temp.prev;
         }
     }
-}
- public class insert_in_doubly_LL {
+
     public static void main(String[] args) {
         DoubliLL list = new DoubliLL();
         list.insert(1);
